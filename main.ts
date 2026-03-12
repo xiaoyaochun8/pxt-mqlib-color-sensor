@@ -72,6 +72,7 @@ namespace mqlib {
             initColorI2C();
         }
         GetRGB();
+        //rmin,rmax,gmin,gmax,bmin,bmax,name
         let retColor = 'none';
         if (val_red >= 200 && val_red <=255 &&
             val_green >= 200 && val_green <= 255 &&
@@ -82,6 +83,56 @@ namespace mqlib {
             val_green >= 80 && val_green <= 160 &&
             val_blue >= 0 && val_blue <= 50) {
             retColor = 'orange';
+        }
+        else if (val_red >= 220 && val_red <= 255 &&
+            val_green >= 220 && val_green <= 255 &&
+            val_blue >= 0 && val_blue <= 100) {
+            retColor = 'yellow';
+        }
+        else if (val_red >= 0 && val_red <= 80 &&
+            val_green >= 150 && val_green <= 255 &&
+            val_blue >= 0 && val_blue <= 120) {
+            retColor = 'green';
+        }
+        else if (val_red >= 0 && val_red <= 60 &&
+            val_green >= 180 && val_green <= 255 &&
+            val_blue >= 180 && val_blue <= 255) {
+            retColor = 'cyan';
+        }
+        else if (val_red >= 0 && val_red <= 60 &&
+            val_green >= 0 && val_green <= 100 &&
+            val_blue >= 160 && val_blue <= 255) {
+            retColor = 'blue';
+        }
+        else if (val_red >= 100 && val_red <= 180 &&
+            val_green >= 0 && val_green <= 80 &&
+            val_blue >= 120 && val_blue <= 220) {
+            retColor = 'purple';
+        }
+        else if (val_red >= 230 && val_red <= 255 &&
+            val_green >= 150 && val_green <= 200 &&
+            val_blue >= 180 && val_blue <= 220) {
+            retColor = 'pink';
+        }
+        else if (val_red >= 0 && val_red <= 30 &&
+            val_green >= 0 && val_green <= 30 &&
+            val_blue >= 0 && val_blue <= 30) {
+            retColor = 'black';
+        }
+        else if (val_red >= 230 && val_red <= 255 &&
+            val_green >= 230 && val_green <= 255 &&
+            val_blue >= 230 && val_blue <= 255) {
+            retColor = 'white';
+        }
+        else if (val_red >= 200 && val_red <= 230 &&
+            val_green >= 200 && val_green <= 230 &&
+            val_blue >= 200 && val_blue <= 230) {
+            retColor = 'gray';
+        }
+        else if (val_red >= 140 && val_red <= 180 &&
+            val_green >= 70 && val_green <= 100 &&
+            val_blue >= 50 && val_blue <= 80) {
+            retColor = 'brown';
         }
         return retColor;
     }
