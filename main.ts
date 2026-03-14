@@ -134,6 +134,7 @@ namespace mqlib {
             val_blue >= 50 && val_blue <= 80) {
             retColor = 'brown';
         }
+        serial.writeLine("" + val_red + "," + val_green + "," + val_blue)
         return retColor;
     }
 
