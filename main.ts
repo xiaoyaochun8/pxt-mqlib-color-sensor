@@ -164,6 +164,7 @@ namespace mqlib {
         //     val_blue >= 0 && val_blue <= 100) {
         //     retColor = 'yellow';
         // }
+        serial.writeLine("" + Math.floor(val_red) + "," + Math.floor(val_green) + "," + Math.floor(val_blue))
         return retColor;
     }
 
