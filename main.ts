@@ -159,16 +159,16 @@ namespace mqlib {
             val_blue >= 230 && val_blue <= 255) {
             retColor = 'blue';
         }
-        else if (val_red >= 220 && val_red <= 255 &&
-            val_green >= 220 && val_green <= 255 &&
+        else if (val_red >= 230 && val_red <= 255 &&
+            val_green >= 230 && val_green <= 255 &&
             val_blue >= 0 && val_blue <= 120) {
             retColor = 'yellow';
         }
-        // else if (val_red >= 230 && val_red <= 255 &&
-        //     val_green >= 80 && val_green <= 160 &&
-        //     val_blue >= 0 && val_blue <= 50) {
-        //     retColor = 'orange';
-        // }
+        else if (val_red >= 230 && val_red <= 255 &&
+            val_green >= 230 && val_green <= 255 &&
+            val_blue >= 0 && val_blue <= 80) {
+            retColor = 'orange';
+        }
         // else if (val_red >= 230 && val_red <= 255 &&
         //     val_green >= 150 && val_green <= 200 &&
         //     val_blue >= 180 && val_blue <= 220) {
