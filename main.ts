@@ -159,11 +159,11 @@ namespace mqlib {
             val_blue >= 230 && val_blue <= 255) {
             retColor = 'blue';
         }
-        // else if (val_red >= 220 && val_red <= 255 &&
-        //     val_green >= 220 && val_green <= 255 &&
-        //     val_blue >= 0 && val_blue <= 100) {
-        //     retColor = 'yellow';
-        // }
+        else if (val_red >= 220 && val_red <= 255 &&
+            val_green >= 220 && val_green <= 255 &&
+            val_blue >= 0 && val_blue <= 120) {
+            retColor = 'yellow';
+        }
         serial.writeLine("" + Math.floor(val_red) + "," + Math.floor(val_green) + "," + Math.floor(val_blue) + "," + retColor)
         return retColor;
     }
