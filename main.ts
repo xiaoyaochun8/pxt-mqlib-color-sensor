@@ -31,7 +31,7 @@ namespace mqlib {
     //% group='colorSensor'
     //% block="颜色识别 初始化模块"
     //% weight=100
-    function initColorI2C(): void {
+    export function initColorI2C(): void {
         setRegConfig();
         initialized = true;
     }
