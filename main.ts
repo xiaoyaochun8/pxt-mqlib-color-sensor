@@ -29,7 +29,7 @@ namespace mqlib {
     }
     //% subcategory="colorSensor"
     //% group='colorSensor'
-    //% block="颜色识别初始化模块"
+    //% block="颜色识别 初始化模块"
     //% weight=100
     function initColorI2C(): void {
         setRegConfig();
@@ -69,7 +69,7 @@ namespace mqlib {
 
     //% subcategory="colorSensor"
     //% group='colorSensor'
-    //% block="识别12种颜色"
+    //% block="识别颜色值 白黑红绿蓝黄橙"
     //% weight=99
     export function GetRGBValue(): string {
         // if (!initialized) {
