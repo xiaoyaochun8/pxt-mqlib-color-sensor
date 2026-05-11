@@ -27,7 +27,10 @@ namespace mqlib {
         i2cWriteData(COLOR_ADD, 0X04, 0X41);
         i2cWriteData(COLOR_ADD, 0x05, 0x01);
     }
-
+    //% subcategory="colorSensor"
+    //% group='colorSensor'
+    //% block="颜色识别初始化模块"
+    //% weight=100
     function initColorI2C(): void {
         setRegConfig();
         initialized = true;
@@ -67,10 +70,11 @@ namespace mqlib {
     //% subcategory="colorSensor"
     //% group='colorSensor'
     //% block="识别12种颜色"
+    //% weight=99
     export function GetRGBValue(): string {
-        if (!initialized) {
-            initColorI2C();
-        }
+        // if (!initialized) {
+        //     initColorI2C();
+        // }
         GetRGB();
         //rmin,rmax,gmin,gmax,bmin,bmax,name
         let retColor = 'xx';
